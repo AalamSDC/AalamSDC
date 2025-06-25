@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aalam Skill Development Center - Hands-on Software Development Training</title>
+    <meta name="description" content="Hands-on Software Development Training by Industry Professionals">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://www.aalamcenter.com/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aalam Skill Development Center">
+    <meta property="og:description" content="Hands-on Software Development Training by Industry Professionals">
+    <meta property="og:url" content="https://www.aalamcenter.com/">
+    <meta property="og:site_name" content="Aalam Skill Development Center">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #0066cc, #00cc99);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f0f0f0;
+        }
+
+        /* Slider Section */
+        .slider {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide:nth-child(1) {
+            background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1350&q=80');
+        }
+
+        .slide:nth-child(2) {
+            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80');
+        }
+
+        .slide:nth-child(3) {
+            background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1350&q=80');
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: #fff;
+        }
+
+        .slide h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide p {
+            font-size: 20px;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Services Section */
+        #services {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        #services h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #0066cc;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* About Section */
+        #about {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        #testimonials h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #0066cc;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .testimonial span {
+            font-size: 14px;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #00cc99;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .slide h2 {
+                font-size: 32px;
+            }
+
+            .slide p {
+                font-size: 16px;
+            }
+
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://www.aalamcenter.com/">Aalam Skill Development Center</a>
+            </div>
+            <nav>
+                <a href="https://www.aalamcenter.com/">Home</a>
+                <a href="https://www.aalamcenter.com/about">About</a>
+                <a href="https://www.aalamcenter.com/services">Services</a>
+                <a href="https://www.aalamcenter.com/courses">Courses</a>
+                <a href="https://www.aalamcenter.com/contact">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Slider Section -->
+    <section class="slider">
+        <div class="slide active">
+            <h2>Welcome to Our E-Learning Platform</h2>
+            <p>Enhance your knowledge and skills with our interactive and user-friendly platform.</p>
+        </div>
+        <div class="slide">
+            <h2>Learn at Your Own Pace</h2>
+            <p>Whether you're a beginner, intermediate, or advanced learner, we've got you covered.</p>
+        </div>
+        <div class="slide">
+            <h2>Master Programming Skills</h2>
+            <p>Explore courses in R, .NET, MongoDB, MySQL, Python, and more!</p>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Courses</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Master full-stack web development with industry-leading frameworks and libraries to build dynamic, responsive websites and applications.</p>
+            </div>
+            <div class="card">
+                <h3>Mobile App Development</h3>
+                <p>Bring your ideas to life with advanced mobile app development, creating intuitive and innovative solutions across all platforms for exceptional user experiences.</p>
+            </div>
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>Boost your creativity in graphic and UI/UX design through practical, project-based learning.</p>
+            </div>
+            <div class="card">
+                <h3>SQL and RDBMS</h3>
+                <p>Master SQL and RDBMS to efficiently manage, query, and optimize your data for scalable, high-performance applications.</p>
+            </div>
+            <div class="card">
+                <h3>WordPress</h3>
+                <p>Build and manage dynamic websites with ease using WordPress, the leading platform for flexible and user-friendly web development.</p>
+            </div>
+            <div class="card">
+                <h3>DevOps</h3>
+                <p>Streamline your development and operations processes with DevOps, ensuring faster delivery, continuous integration, and improved collaboration.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence and drive growth with effective digital marketing strategies, including SEO, social media, and more.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analytics</h3>
+                <p>Unlock valuable insights and drive informed decisions with advanced data analytics techniques and tools.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Create visually engaging and user-friendly designs using industry-leading tools like Photoshop and Illustrator.</p>
+            </div>
+            <div class="card">
+                <h3>Video Editing</h3>
+                <p>Transform raw footage into professional-quality videos using Adobe Premiere Pro, with expert editing techniques and seamless storytelling.</p>
+            </div>
+            <div class="card">
+                <h3>Software Testing</h3>
+                <p>Ensure the quality and reliability of your applications with automated testing using Selenium, streamlining the testing process for efficient results.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Computing</h3>
+                <p>Leverage the power of cloud platforms like AWS, Azure, and Google Cloud to build scalable, secure, and cost-effective solutions.</p>
+            </div>
+            <div class="card">
+                <h3>Chatbot Development</h3>
+                <p>Enhance customer engagement and automate interactions with intelligent, AI-powered chatbots for seamless communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer high-quality software training programs that help you gain practical, in-demand skills. Our courses are designed by industry experts to ensure you’re always up to date. Gain practical skills to advance your career. This is a pure Hands-on Software Development Training led by Industry Professionals.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"This course helped me land my dream job as a front-end developer!"</p>
+                <span>- Venkatesh</span>
+            </div>
+            <div class="testimonial">
+                <p>"This course gave me the skills and confidence I needed to succeed in my career. Thank you!"</p>
+                <span>- Prathyush</span>
+            </div>
+            <div class="testimonial">
+                <p>"I never thought data science could be this approachable. Thank you!"</p>
+                <span>- Sathis Kumar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Aalam Skill Development Center. All rights reserved.</p>
+        <p><a href="https://www.aalamcenter.com/privacy-policy">Privacy Policy</a> | <a href="https://www.aalamcenter.com/terms-of-service">Terms of Service</a></p>
+        <p>Follow us on <a href="https://twitter.com/">Twitter</a> | <a href="https://linkedin.com/">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation for cards on scroll
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(card);
+        });
+
+        // Carousel Slider Functionality
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                    dots[i].classList.add('active');
+                }
+            });
+        }
+
+        function currentSlide(index) {
+            slideIndex = index;
+            showSlide(slideIndex);
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }, 5000);
+    </script>
+</body>
+</html>
