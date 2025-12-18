@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "TAN Headline";
+  src: url("../fonts/TANHEADLINE-Regular.woff2") format("woff2"),
+    url("../fonts/TANHEADLINE-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tan-headline {
+  font-family: "TAN Headline", serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.logo-title {
+  color: #F28C38;
+  margin-left: -50px;
+}
+
+.logo-subtitle {
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.banner-title {
+  color: #fff;
+}
+
+.blog-container {
+  padding: 3rem 0;
+  background-color: #fff5ee;
+}
+
+.main-content-row {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.1);
+  padding: 20px 0 0 0;
+  background-color: #fff;
+}
+
+.content-row {
+  width: 100%;
+}
+
+.blog-article {
+  padding: 2rem;
+  background: #fff;
+}
+
+.section-header {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.section-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 31px 0 0 0;
+  text-align: end;
+}
+
+.section-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+
+.section-text:hover {
+  color: #555;
+}
+
+.section-list {
+  padding-left: 1.5rem;
+}
+
+.list-item {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 0.3rem 0;
+  margin-left: 30px;
+  position: relative;
+  text-align: left;
+}
+
+.list-item:hover {
+  transform: translateX(5px);
+  color: #f28c38;
+}
+
+.list-bullet {
+  color: black;
+}
+
+.section-spacing {
+  padding: 20px 0 0 0;
+}
+
+.job-text {
+  margin-left: 15px;
+}
+
+.section-underline {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 83%;
+  height: 2.5px;
+  left: 50px;
+  background: rgb(108, 108, 108);
+}
+
+.sidebar-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
+  margin-top: 115px;
+  height: auto;
+  padding-bottom: 20px;
+  border-radius: 30px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #F28C38;
+  font-weight: 700;
+  position: relative;
+  transition: color 0.3s ease;
+  text-align: left;
+  padding: 7px 0 7px 15px;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.card-icon.salary-icon {
+  margin-left: 15px;
+}
+
+.card-list {
+  padding-left: 1rem;
+  padding-right: 7px;
+}
+
+.card-list-item {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 0.3rem 0;
+  margin-left: 20px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* .card-list-item:hover {
+  border: 1px solid #f28c38;
+  background-color: #f7e4d4;
+  border-radius: 15px;
+  transform: translateX(5px); 
+  color: #f28c38;
+} */
+
+.card-bullet {
+  color: black;
+}
+
+.card-list-bold {
+  color: black;
+  font-weight: bold;
+}
+
+.salary-card {
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 10px;
+}
+
+.salary-header {
+  height: 55px;
+  background-color: #F28C38;
+}
+
+.salary-header .card-title {
+  padding-top: 20px;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card-text:hover {
+  color: #f28c38;
+}
+
+.card-text-bottom {
+  color: black;
+  padding-left: 15px;
+}
+
+.footer-logo-title {
+  font-size: 30px;
+  padding: 0 0 10px;
+  color: #F28C38;
+}
+
+.footer-logo-subtitle {
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: justify;
+  transition: color 0.3s ease;
+}

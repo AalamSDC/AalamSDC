@@ -1,483 +1,1856 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aalam Skill Development Center - Hands-on Software Development Training</title>
-    <meta name="description" content="Hands-on Software Development Training by Industry Professionals">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://www.aalamcenter.com/">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Aalam Skill Development Center">
-    <meta property="og:description" content="Hands-on Software Development Training by Industry Professionals">
-    <meta property="og:url" content="https://www.aalamcenter.com/">
-    <meta property="og:site_name" content="Aalam Skill Development Center">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
+  <meta charset="utf-8" />
+  <title>Aalam – Software Training Courses & Internship in Pollachi</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
+  <!-- Favicons -->
+  <link href="./img/logo/Aalam-skill-development-center-pollachi.png" rel="icon" />
+  <link href="./img/logo/Aalam-skill-development-center-pollachi.png" rel="apple-touch-icon" />
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet" />
 
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, #0066cc, #00cc99);
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+  <!-- Libraries CSS Files -->
+  <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet" />
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/venobox/venobox.css" rel="stylesheet" />
 
-        .logo a {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-        }
+  <!-- Nivo Slider Theme -->
+  <link href="css/nivo-slider-theme.css" rel="stylesheet" />
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet" />
 
-        nav a:hover {
-            color: #f0f0f0;
-        }
+  <!-- Responsive Stylesheet File -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
-        /* Slider Section */
-        .slider {
-            width: 100%;
-            height: 500px;
-            position: relative;
-            overflow: hidden;
-            margin-top: 10px;
-        }
 
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: #fff;
-            text-align: center;
-        }
 
-        .slide.active {
-            opacity: 1;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        .slide:nth-child(1) {
-            background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1350&q=80');
-        }
+  <!-- =======================================================
+    Theme Name: eBusiness
+    Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  <style>
+    @font-face {
+      font-family: "TAN Headline";
+      src: url("./fonts/TANHEADLINE-Regular.woff2") format("woff2"),
+        url("./fonts/TANHEADLINE-Regular.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
 
-        .slide:nth-child(2) {
-            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80');
-        }
-
-        .slide:nth-child(3) {
-            background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1350&q=80');
-        }
-
-        .slider-dots {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
-
-        .dot {
-            width: 12px;
-            height: 12px;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .dot.active {
-            background-color: #fff;
-        }
-
-        .slide h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .slide p {
-            font-size: 20px;
-            max-width: 600px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        /* Services Section */
-        #services {
-            padding: 60px 20px;
-            background-color: #fff;
-        }
-
-        #services h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-            color: #0066cc;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .card p {
-            font-size: 16px;
-            color: #666;
-        }
-
-        /* About Section */
-        #about {
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
-            text-align: center;
-        }
-
-        #about h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #0066cc;
-        }
-
-        #about p {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 18px;
-            color: #333;
-        }
-
-        /* Testimonials Section */
-        #testimonials {
-            padding: 60px 20px;
-            background-color: #fff;
-        }
-
-        #testimonials h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-            color: #0066cc;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .testimonial {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .testimonial p {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .testimonial span {
-            font-size: 14px;
-            color: #0066cc;
-            font-weight: bold;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 10px 0;
-        }
-
-        footer a {
-            color: #00cc99;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .slide h2 {
-                font-size: 32px;
-            }
-
-            .slide p {
-                font-size: 16px;
-            }
-
-            header .container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                margin-top: 10px;
-            }
-
-            nav a {
-                margin: 0 10px;
-            }
-        }
-    </style>
+    .tan-headline {
+      font-family: "TAN Headline", serif;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="https://www.aalamcenter.com/">Aalam Skill Development Center</a>
-            </div>
-            <nav>
-                <a href="https://www.aalamcenter.com/">Home</a>
-                <a href="https://www.aalamcenter.com/about">About</a>
-                <a href="https://www.aalamcenter.com/services">Services</a>
-                <a href="https://www.aalamcenter.com/courses">Courses</a>
-                <a href="https://www.aalamcenter.com/contact">Contact Us</a>
+
+<body data-spy="scroll" data-target="#navbar-example">
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                  <div style="display: flex; align-items: center">
+                    <img src="./img/logo/Aalam-skill-development-center-pollachi.png"
+                      alt="Aalam-skill-development-center-pollachi"
+                      style="width: 60px; height: 60px; margin-right: 10px; margin-top: -12px;" />
+                    <h3 style="
+                          display: flex;
+                          flex-direction: column;
+                          line-height: 1.2;
+                          margin: 0;
+                        ">
+                      <span style="color: #F28C38; margin-left: -50px;" class="tan-headline">Aalam</span>
+                      <span style="color: #444; font-size: 14px; font-weight:600;">Skill Development Center</span>
+                    </h3>
+                  </div>
+                </a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#services">Courses</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#portfolio">Gallery</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
             </nav>
+            <!-- END: Navigation -->
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
 
-    <!-- Slider Section -->
-    <section class="slider">
-        <div class="slide active">
-            <h2>Welcome to Our E-Learning Platform</h2>
-            <p>Enhance your knowledge and skills with our interactive and user-friendly platform.</p>
-        </div>
-        <div class="slide">
-            <h2>Learn at Your Own Pace</h2>
-            <p>Whether you're a beginner, intermediate, or advanced learner, we've got you covered.</p>
-        </div>
-        <div class="slide">
-            <h2>Master Programming Skills</h2>
-            <p>Explore courses in R, .NET, MongoDB, MySQL, Python, and more!</p>
-        </div>
-        <div class="slider-dots">
-            <span class="dot active" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
-    </section>
+  <!-- Start Slider Area -->
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        <img src="img/slider/Software-Training-&-Internship-opportunities-right-here-in-Pollachi.jpg"
+          alt="Software-Training-&-Internship-opportunities-right-here-in-Pollachi" title="#slider-direction-1" />
+        <img src="img/slider/Get-placement-focused-training-with-real-project-experience-in-Pollachi.jpg"
+          alt="Get-placement-focused-training-with-real-project-experience-in-Pollachi" title="#slider-direction-2" />
+        <img src="img/slider/Learn-from-Industry-Professionals-and-Unlock-Career-Opportunities-in-Pollachi.jpg"
+          alt="Learn-from-Industry-Professionals-and-Unlock-Career-Opportunities-in-Pollachi"
+          title="#slider-direction-3" />
+      </div>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Courses</h2>
-        <div class="services-grid">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Master full-stack web development with industry-leading frameworks and libraries to build dynamic, responsive websites and applications.</p>
+      <!-- direction 1 -->
+      <div id="slider-direction-1" class="slider-direction slider-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">
+                    Gain Real-world Software Development Experience by Working
+                    on Live Projects.
+                  </h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">
+                    Software Training & Internship opportunities right here in
+                    Pollachi
+                  </h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Courses</a>
+                  <a class="ready-btn page-scroll" href="#about">About Us</a>
+                </div>
+              </div>
             </div>
-            <div class="card">
-                <h3>Mobile App Development</h3>
-                <p>Bring your ideas to life with advanced mobile app development, creating intuitive and innovative solutions across all platforms for exceptional user experiences.</p>
-            </div>
-            <div class="card">
-                <h3>Graphic Design</h3>
-                <p>Boost your creativity in graphic and UI/UX design through practical, project-based learning.</p>
-            </div>
-            <div class="card">
-                <h3>SQL and RDBMS</h3>
-                <p>Master SQL and RDBMS to efficiently manage, query, and optimize your data for scalable, high-performance applications.</p>
-            </div>
-            <div class="card">
-                <h3>WordPress</h3>
-                <p>Build and manage dynamic websites with ease using WordPress, the leading platform for flexible and user-friendly web development.</p>
-            </div>
-            <div class="card">
-                <h3>DevOps</h3>
-                <p>Streamline your development and operations processes with DevOps, ensuring faster delivery, continuous integration, and improved collaboration.</p>
-            </div>
-            <div class="card">
-                <h3>Digital Marketing</h3>
-                <p>Boost your online presence and drive growth with effective digital marketing strategies, including SEO, social media, and more.</p>
-            </div>
-            <div class="card">
-                <h3>Data Analytics</h3>
-                <p>Unlock valuable insights and drive informed decisions with advanced data analytics techniques and tools.</p>
-            </div>
-            <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Create visually engaging and user-friendly designs using industry-leading tools like Photoshop and Illustrator.</p>
-            </div>
-            <div class="card">
-                <h3>Video Editing</h3>
-                <p>Transform raw footage into professional-quality videos using Adobe Premiere Pro, with expert editing techniques and seamless storytelling.</p>
-            </div>
-            <div class="card">
-                <h3>Software Testing</h3>
-                <p>Ensure the quality and reliability of your applications with automated testing using Selenium, streamlining the testing process for efficient results.</p>
-            </div>
-            <div class="card">
-                <h3>Cloud Computing</h3>
-                <p>Leverage the power of cloud platforms like AWS, Azure, and Google Cloud to build scalable, secure, and cost-effective solutions.</p>
-            </div>
-            <div class="card">
-                <h3>Chatbot Development</h3>
-                <p>Enhance customer engagement and automate interactions with intelligent, AI-powered chatbots for seamless communication.</p>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We offer high-quality software training programs that help you gain practical, in-demand skills. Our courses are designed by industry experts to ensure you’re always up to date. Gain practical skills to advance your career. This is a pure Hands-on Software Development Training led by Industry Professionals.</p>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>What Our Students Say</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial">
-                <p>"This course helped me land my dream job as a front-end developer!"</p>
-                <span>- Venkatesh</span>
+      <!-- direction 2 -->
+      <div id="slider-direction-2" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content text-center">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">
+                    The Best Place to Learn Software Development for Freshers,
+                    Students & Job Seekers.
+                  </h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">
+                    Get placement-focused training with real project
+                    experience in Pollachi.
+                  </h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Courses</a>
+                  <a class="ready-btn page-scroll" href="#about">About US</a>
+                </div>
+              </div>
             </div>
-            <div class="testimonial">
-                <p>"This course gave me the skills and confidence I needed to succeed in my career. Thank you!"</p>
-                <span>- Prathyush</span>
-            </div>
-            <div class="testimonial">
-                <p>"I never thought data science could be this approachable. Thank you!"</p>
-                <span>- Sathis Kumar</span>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Aalam Skill Development Center. All rights reserved.</p>
-        <p><a href="https://www.aalamcenter.com/privacy-policy">Privacy Policy</a> | <a href="https://www.aalamcenter.com/terms-of-service">Terms of Service</a></p>
-        <p>Follow us on <a href="https://twitter.com/">Twitter</a> | <a href="https://linkedin.com/">LinkedIn</a></p>
-    </footer>
+      <!-- direction 3 -->
+      <div id="slider-direction-3" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+                <!-- layer 1 -->
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">
+                    Hands-on Courses in Full Stack and Mobile App Development
+                  </h2>
+                </div>
+                <!-- layer 2 -->
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">
+                    Learn from Industry Professionals and Unlock Career
+                    Opportunities in Pollachi
+                  </h1>
+                </div>
+                <!-- layer 3 -->
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Courses</a>
+                  <a class="ready-btn page-scroll" href="#about">About Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Slider Area -->
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+  <!-- Start About area -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>About <span style="color: #F28C38;">Aalam</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+                <img src="./img/gallery/Software-Training-Courses-in-Pollachi.jpg"
+                  alt="Software Training Courses in Pollachi" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="#">
+                <h4 class="sec-head">
+                  Software Training Courses in Pollachi
+                </h4>
+              </a>
+              <p>
+                Aalam Skill Development Center is the best place for students,
+                freshers, and job seekers to learn Software Development in
+                Pollachi. We offer hands-on training with real-time projects,
+                led by experienced Industry Professionals — available both
+                offline and online. Our programs are designed to give you
+                practical skills and career support in the following areas:
+              </p>
+              <ul>
+                <li><i class="fa fa-check"></i> Full Stack Development</li>
+                <li><i class="fa fa-check"></i> Mobile App Development</li>
+                <li><i class="fa fa-check"></i> Placement Training</li>
+                <li>
+                  <i class="fa fa-check"></i> Internships & Job Opportunities
+                </li>
+                <p>
+                  Join us and take the first step toward a successful tech
+                  career — in and around Pollachi.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+
+  <!-- Course Card Details Start-->
+
+  <section id="services">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="section-headline text-center">
+        <h2>Our <span>Course</span></h2>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/Basic Programming.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Basic-Programming-course-in-pollachi.jpg" alt="Basic-Programming-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Basic Programming</h3>
+        <p>
+          Start your journey by learning core programming skills, from basic
+          logic building to problem-solving techniques.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom: 15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/Basic Programming.html" target="_blank" style="text-decoration: none">
+            Read More <span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/Work with Developers.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/workwithdevloper-course-in-pollachi.png"
+              alt="Work With Developers Course In Pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Work with Developers</h3>
+        <p>
+          Enhance your coding skills by working with real developers on live
+          projects.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/Work with Developers.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/mern.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/MERN-stack-course-in-pollachi.png" alt="MERN-stack-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>MERN Stack</h3>
+        <p>
+          Master MongoDB, Express.js, React, and Node.js to build dynamic,
+          responsive websites and web applications.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/mern.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/react-native.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/React-Native-course-in-pollachi.png" alt="React-Native-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>React Native</h3>
+        <p>
+          Learn to build cross-platform mobile apps for Android and iOS with
+          a single codebase using React Native.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/react-native.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/Flutter.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Flutter-course-in-pollachi.png" alt="Flutter-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Flutter</h3>
+        <p>
+          With Google’s Flutter, you can create fast, beautiful mobile apps
+          for both Android and iOS.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/Flutter.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/dotnet.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/DotNet-course-in-pollachi.png" alt="DotNet-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>.Net</h3>
+        <p>
+          Learn to develop secure, scalable web applications and desktop
+          software using .NET and ASP.NET.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/dotnet.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/python.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Python-course-in-pollachi.jpg" alt="Python-course-in-pollachi"
+              style="object-fit: fill;" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Python</h3>
+        <p>
+          Master Python, one of the most versatile programming languages for
+          web development, data science, and automation.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/python.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/java.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Java-course-in-pollachi.png" alt="Java-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Java</h3>
+        <p>
+          Learn Java, one of the most widely-used languages for building
+          mobile apps, web applications, and enterprise-level software.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/java.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/database.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Database-course-in-pollachi.png" alt="Database-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Database</h3>
+        <p>
+          Gain expertise in managing and querying data using SQL (MySQL,
+          PostgreSQL) and NoSQL databases (MongoDB).
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/database.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <!-- <a
+          href="./Card-Detail/graphic.html"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card">
+            <img src="./img/card/graphic.jpeg" alt="Graphic Design" />
+            <h3>Graphic Design</h3>
+            <p>
+              Boost your creativity in graphic and UI/UX design through
+              practical, project-based learning.
+            </p>
+          </div>
+        </a> -->
+      <!-- <a
+          href="./Card-Detail/sql.html"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card">
+            <img src="./img/card/sql.png" alt="SQL and RDBMS" />
+            <h3>SQL and RDBMS</h3>
+            <p>
+              Master SQL and RDBMS to efficiently manage, query, and optimize
+              your data for scalable, high-performance applications.
+            </p>
+          </div>
+        </a> -->
+      <!-- <a
+          href="./Card-Detail/wordpress.html"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card">
+            <img src="./img/card/wordpress.jpeg" alt="WordPress" />
+            <h3>WordPress</h3>
+            <p>
+              Build and manage dynamic websites with ease using WordPress, the
+              leading platform for flexible and user-friendly web development.
+            </p>
+          </div>
+        </a> -->
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/DevOps.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/DevOps-course-in-pollachi.png" alt="DevOps-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>DevOps</h3>
+        <p>
+          Master essential DevOps tools like Docker, Jenkins, and Kubernetes
+          to automate and streamline the software development process.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/DevOps.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/Digital Marketing.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/DigitalMarketing-course-in-pollachi.png" alt="DigitalMarketing-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Digital Marketing</h3>
+        <p>
+          Master SEO, content marketing, and digital advertising to improve
+          online visibility and drive traffic to websites.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/Digital Marketing.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/Placement Training.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/PlacementTraining-course-in-pollachi.png" alt="PlacementTraining-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Placement Training</h3>
+        <p>
+          Get ready for your first tech job with expert training in soft
+          skills, resume building, and interview preparation.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/Placement Training.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/ui-ux.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/UI-UX-course-in-pollachi.jpg" alt="UI-UX-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>
+          Learn the principles of UI/UX design to create intuitive,
+          user-friendly websites and mobile apps.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/ui-ux.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <div class="saleon">Special</div>
+          <a href="./detail/Agile Methodology.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Agile-Methodology-course-in-pollachi.png" alt="Agile-Methodology-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Agile Methodology</h3>
+        <p>
+          Learn how to work in an Agile environment, breaking large projects
+          into manageable tasks and delivering faster results.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/Agile Methodology.html" target="_blank" style="text-decoration: none">
+            Read More <span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/software testing.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/Software-Testing-course-in-pollachi.jpg" alt="Software-Testing-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>Software Testing</h3>
+        <p>
+          Learn manual and automated software testing techniques to ensure
+          high-quality applications.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/software testing.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+      <!-- <a
+          href="./Card-Detail/cloud.html"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card">
+            <img src="./img/card/Cloud.jpeg" alt="Cloud Computing" />
+            <h3>Cloud Computing</h3>
+            <p>
+              Leverage the power of cloud platforms like AWS, Azure, and Google
+              Cloud to build scalable, secure, and cost-effective solutions.
+            </p>
+          </div>
+        </a> -->
+      <div class="card" onmouseover="this.style.color='#e67e22'; this.querySelector('span').style.width='100%';"
+        onmouseout="this.style.color='#f28c38'; this.querySelector('span').style.width='0';">
+        <div style="display: flex; flex-direction: column;">
+          <a href="./detail/AI & Data Science.html" target="_blank" style="text-decoration: none">
+            <img src="./img/card/AI-Data-Science-course-in-pollachi.png" alt="AI-Data-Science-course-in-pollachi" />
+          </a>
+          <div style="border-top: 1px solid #ebebeb; width: 100%; font-weight: 50;">
+          </div>
+          <span style="
+                    width: 0;
+                    height: 3px;
+                    background: #e67e22;
+                    transition: width 0.3s ease;
+                  "></span>
+        </div>
+        <h3>AI & Data Science</h3>
+        <p>
+          Dive into artificial intelligence (AI), machine learning (ML), and
+          data science with Python.
+        </p>
+        <div
+          style="border-top: 1px solid #d8d8d8; width: 100%; margin-bottom:15px; margin-top: 50px; font-weight: 100;">
+        </div>
+        <div id="full-detail">
+          <a href="./detail/AI & Data Science.html" target="_blank" style="text-decoration: none">
+            Read More<span> ➔</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Course Card Details End-->
+  <!-- our-skill-area start -->
+  <div class="our-skill-area fix hidden-sm">
+    <div class="test-overly"></div>
+    <div class="skill-bg area-padding-2">
+      <div class="container">
+        <!-- section-heading end -->
+        <div class="row">
+          <div class="skill-text">
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="97" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#F28C38" data-thickness=".20" data-readonly="true" disabled />
+                  <h3 class="progress-h4">Full Stack</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="96" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#F28C38" data-thickness=".20" data-readonly="true" disabled />
+                  <h3 class="progress-h4">Mobile App</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="98" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#F28C38" data-thickness=".20" data-readonly="true" disabled />
+                  <h3 class="progress-h4">Placement Training</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+            <!-- single-skill start -->
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <div class="single-skill">
+                <div class="progress-circular">
+                  <input type="text" class="knob" value="0" data-rel="99" data-linecap="round" data-width="175"
+                    data-bgcolor="#fff" data-fgcolor="#F28C38" data-thickness=".20" data-readonly="true" disabled />
+                  <h3 class="progress-h4">Work with Developer</h3>
+                </div>
+              </div>
+            </div>
+            <!-- single-skill end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- our-skill-area end -->
+
+  <!-- Start team Area -->
+  <!-- <div id="team" class="our-team-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Our special Team</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-top">
+            <div class="res-team">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/1.jpg" alt="" />
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Jhon Mickel</h4>
+                  <p>Seo</p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="res-team">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/2.jpg" alt="" />
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Andrew Arnold</h4>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="res-team">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/3.jpg" alt="" />
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Lellien Linda</h4>
+                  <p>Web Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="res-team">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/4.jpg" alt="" />
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Jhon Powel</h4>
+                  <p>Seo Expert</p>
+                </div>
+              </div>
+            </div>
+            <div class="res-team">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/4.jpg" alt="" />
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Jhon Powel</h4>
+                  <p>Seo Expert</p>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- End Team Area -->
+  <br>
+  <br>
+  <!-- Start reviews Area -->
+  <div class="reviews-area hidden-xs">
+    <div class="work-us">
+      <div class="work-left-text">
+        <a href="#">
+          <img
+            src="./img/gallery/The-best-place-for-students-freshers-and-job-seekers-to-learn Software-Development-in-Pollachi.jpg"
+            alt="The-best-place-for-students-freshers-and-job-seekers-to-learn-Software-Development-in-Pollachi" />
+        </a>
+      </div>
+      <div class="work-right-text text-center">
+        <h2 style="color: #F28C38; font-weight:bold">Learn With Us</h2>
+        <h5 style="font-weight: lighter;">
+          The best place for students, freshers, and job seekers <br>to learn Software Development in Pollachi.
+        </h5>
+        <a href="#contact" class="ready-btn">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <!-- End reviews Area -->
+
+  <!-- Start portfolio Area -->
+  <div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Our <span style="color: #F28C38;">Gallery</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Start Portfolio -page -->
+        <div class="awesome-project-1 fix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="awesome-menu">
+              <ul class="project-menu">
+                <li>
+                  <a href="#" class="active" data-filter="*">All</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".development">Development</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".design">Design</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".photo">Photoshop</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="awesome-project-content">
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/gallery/Training-center-in-pollachi.jpg"
+                    alt="Training-center-in-pollachi" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/Training-center-in-pollachi.jpg">
+                      <h4>Internships in Pollachi</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/gallery/Skill-Development-center-in-pollachi.jpg"
+                    alt="Skill-Development-center-in-pollachi" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery"
+                      href="img/gallery/Skill-Development-center-in-pollachi.jpg">
+                      <h4>Aalam Skill Development Center</h4>
+                      <span>Placement Training</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/gallery/Intership-opportunities-right-here-in-Pollachi.jpg"
+                    alt="Intership-opportunities-right-here-in-Pollachi" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery"
+                      href="img/gallery/Intership-opportunities-right-here-in-Pollachi.jpg">
+                      <h4>Work with Live Project</h4>
+                      <span>Full Stack</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/gallery/Placement-Training-in-pollachi.jpg"
+                    alt="Placement-Training-in-pollachi" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/Placement-Training-in-pollachi.jpg">
+                      <h4>Software Training</h4>
+                      <span>Crack Interview</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/gallery/Live-Project-Working-in-pollachi.jpg"
+                    alt="Live-Project-Working-in-pollachi" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/gallery/Live-Project-Working-in-pollachi.jpg">
+                      <h4>Working with Developers</h4>
+                      <span>Moblie App Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+          <!-- single-awesome-project start -->
+          <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="img/gallery/learn-Software-Development-in-Pollachi.jpg"
+                    alt="learn-Software-Development-in-Pollachi" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery"
+                      href="img/gallery/learn-Software-Development-in-Pollachi.jpg">
+                      <h4>Group Project</h4>
+                      <span>Team Collaboration</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single-awesome-project end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- awesome-portfolio end -->
+
+  <!-- start pricing area -->
+  <!-- <div id="pricing" class="pricing-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Pricing Table</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>
+                basic <br />
+                <span>$80 / month</span>
+              </h3>
+              <ol>
+                <li class="check">Online system</li>
+                <li class="check cross">Full access</li>
+                <li class="check">Free apps</li>
+                <li class="check">Multiple slider</li>
+                <li class="check cross">Free domin</li>
+                <li class="check cross">Support unlimited</li>
+                <li class="check">Payment online</li>
+                <li class="check cross">Cash back</li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list active">
+              <span class="saleon">top sale</span>
+              <h3>
+                standard <br />
+                <span>$110 / month</span>
+              </h3>
+              <ol>
+                <li class="check">Online system</li>
+                <li class="check">Full access</li>
+                <li class="check">Free apps</li>
+                <li class="check">Multiple slider</li>
+                <li class="check cross">Free domin</li>
+                <li class="check">Support unlimited</li>
+                <li class="check">Payment online</li>
+                <li class="check cross">Cash back</li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>
+                premium <br />
+                <span>$150 / month</span>
+              </h3>
+              <ol>
+                <li class="check">Online system</li>
+                <li class="check">Full access</li>
+                <li class="check">Free apps</li>
+                <li class="check">Multiple slider</li>
+                <li class="check">Free domin</li>
+                <li class="check">Support unlimited</li>
+                <li class="check">Payment online</li>
+                <li class="check">Cash back</li>
+              </ol>
+              <button>sign up now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- End pricing table area -->
+
+  <!-- Start Testimonials -->
+  <div class="testimonials-area">
+    <div class="testi-inner area-padding">
+      <div class="testi-overly"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <!-- Start testimonials Start -->
+            <div class="testimonial-content text-center">
+              <!-- start testimonial carousel -->
+              <div class="testimonial-carousel">
+                <!-- End single item -->
+                <div class="single-testi">
+                  <img class="quate" src="./img/review-member/Career-Opportunities-in-Pollachi.jpg" />
+                  <div class="testi-text">
+                    <p>
+                      <span style="color: #F28C38;">Manikandan -</span> This course helped me land my dream job as a
+                      front-end developer!
+                    </p>
+                  </div>
+                </div>
+                <div class="single-testi">
+                  <img class="quate" src="./img/review-member/internship-in-pollachi.jpg" />
+                  <div class="testi-text">
+                    <p>
+                      <span style="color: #F28C38;">Prathyush -</span> This course gave me the skills and confidence I
+                      needed to succeed in my career. Thank you!
+                    </p>
+
+                  </div>
+                </div>
+                <!-- End single item -->
+                <div class="single-testi">
+                  <img class="quate" src="./img/review-member/Unlock-Career-Opportunities-in-Pollachi.jpg" />
+                  <div class="testi-text">
+                    <p>
+                      <span style="color: #F28C38;">Sathish Kumar -</span> I never thought data science could be this
+                      approachable. Thank you!
+                    </p>
+                  </div>
+                </div>
+                <!-- End single item -->
+              </div>
+            </div>
+            <!-- End testimonials end -->
+          </div>
+          <!-- End Right Feature -->
+        </div>
+
+      </div>
+
+    </div>
+    <div class="welcome-text">
+      <h2>Welcome Aalam Skill Development Center in Pollachi</h2>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Start contact Area -->
+  <div id="contact" class="contact-area">
+    <div class="contact-inner area-padding">
+      <div class="contact-overly"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Contact <span style="color: #F28C38;">us</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-mobile"></i>
+                <p>
+                  Call: +91 82481 91147<br />
+                  <span>Monday-Saturday (9am-5pm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-envelope-o"></i>
+                <p style="cursor: pointer; color: rgb(19, 167, 217)">
+                  <span style="color: black;">Email:</span> training.aalam@gmail.com<br />
+                  <span style="color: black;">Web: <a href="https://www.aalamcenter.com" target="_blank"
+                      style="text-decoration: none;">www.aalamcenter.com</a></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>
+                  Near AMS School/ RTO,<br />
+                  <span>Udumalai Road, Pollachi, Tamil Nadu - 642003</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="display: flex; flex-wrap: wrap; width: 100%;">
+          <!-- Start Google Map -->
+          <div class="col-md-6 col-sm-12 col-xs-12"
+            style="flex: 0 0 50%; max-width: 50%; min-width: 0; box-sizing: border-box;">
+            <!-- Start Map -->
+            <div style="width: 100%; height: 100%;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.0167843109834!2d77.02821357480305!3d10.655803689485763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba837d43a4c82e9%3A0x4156b1df954fdb93!2sAalam%20Skill%20Development%20Center!5e0!3m2!1sen!2sin!4v1752494172221!5m2!1sen!2sin"
+                id="google-map" style="border:0; width: 100%; height: 400px; min-height: 300px;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- End Map -->
+          </div>
+          <!-- End Google Map -->
+
+          <!-- Start contact -->
+          <div class="col-md-6 col-sm-12 col-xs-12"
+            style="flex: 0 0 50%; max-width: 50%; min-width: 0; box-sizing: border-box;">
+            <div class="form contact-form" style="padding: 15px; height: 100%; box-sizing: border-box;">
+              <div id="sendmessage">
+                Your message has been sent. Thank you!
+              </div>
+              <div id="msg"></div>
+              <form action="" method="post" role="form" class="contactForm" id="contact-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+                    style="max-width: 100%; box-sizing: border-box;" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email"
+                    style="max-width: 100%; box-sizing: border-box;" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
+                    style="max-width: 100%; box-sizing: border-box;" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" id="message"
+                    data-msg="Please write something for us" placeholder="Message"
+                    style="max-width: 100%; box-sizing: border-box;"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Left contact -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Area -->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <span class="tan-headline" style="font-size: 30px; padding:0 0 10px; color:#F28C38">Aalam</span>
+                  <h4 style="font-weight: 600;">Skill Development Center</h4>
+                </div>
+
+                <p>
+                  We offer hands-on training with real-time projects, led by experienced Industry Professionals —
+                  available both offline and online.
+                </p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=61568651880560"><i
+                          class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/AalamCenter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.google.com/maps/place/Aalam+Skill+Development+Center/@10.6558037,77.0282136,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba837d43a4c82e9:0x4156b1df954fdb93!8m2!3d10.6558037!4d77.0307885!16s%2Fg%2F11wqnyz0j5?entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/aalamskilldevelopmentcenter/"><i
+                          class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4 style="font-weight: bold;">information</h4>
+                <p>
+                  The best place for students, freshers, and job seekers to learn Software Development in Pollachi.
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Call:</span> +91 82481 91147</p>
+                  <p><span>Email:</span> training.aalam@gmail.com</p>
+                  <p><span>Working Hours:</span> 9am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4 style="font-weight: bold;">Instagram</h4>
+                <div class="flicker-img">
+                  <a href="#"><img src="img/gallery/Training-center-in-pollachi.jpg"
+                      alt="Training-center-in-pollachi" /></a>
+                  <a href="#"><img src="img/gallery/Skill-Development-center-in-pollachi.jpg"
+                      alt="Skill-Development-center-in-pollachi" /></a>
+                  <a href="#"><img src="img/gallery/Intership-opportunities-right-here-in-Pollachi.jpg"
+                      alt="Intership-opportunities-right-here-in-Pollachi" /></a>
+                  <a href="#"><img src="img/gallery/Placement-Training-in-pollachi.jpg"
+                      alt="Placement-Training-in-pollachi" /></a>
+                  <a href="#"><img src="img/gallery/Live-Project-Working-in-pollachi.jpg"
+                      alt="Live-Project-Working-in-pollachi" /></a>
+                  <a href="#"><img src="img/gallery/learn-Software-Development-in-Pollachi.jpg"
+                      alt="learn-Software-Development-in-Pollachi" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                © Copyright <strong>Aalam Skill Development in Pollachi</strong>. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-icon">
+    <a href="https://wa.me/+918248191147?text=Hi%20Aalam%20Team%2C%0A%0AI%20hope%20you%20are%20doing%20well.%0AI%20have%20reviewed%20the%20courses%20you%20offer%20and%20would%20like%20more%20information%20on%20how%20to%20proceed%20with%20enrollment.%20Any%20details%20you%20can%20provide%20would%20be%20greatly%20appreciated.%0A%0AThank%20you." alt="Contact-Aalam-skill-development-centre-in-pollachi" target="_blank"
+      rel="noopener noreferrer">
+      <img src="./img/logo/Contact-Aalam-skill-development-centre-in-pollachi.png"
+        alt="Contact-Aalam-skill-development-centre-in-pollachi" />
+    </a>
+  </div>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/knob/jquery.knob.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="lib/appear/jquery.appear.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <!-- <script src="contactform/contactform.js"></script> -->
+
+  <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your Public Key
+    emailjs.init("MSkiNBifNNdyzRV0k");
+
+    jQuery(document).ready(function ($) {
+      "use strict";
+
+      $('form.contactForm').submit(function (e) {
+        e.preventDefault();
+        var f = $(this).find('.form-group'),
+          ferror = false,
+          emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+
+        // Reset all validation messages first
+        f.find('.validation').html('');
+
+        // INPUT validation
+        f.children('input').each(function () {
+          var i = $(this);
+          var rule = i.attr('data-rule');
+          if (!rule) return;
+
+          var ierror = false;
+          var pos = rule.indexOf(':');
+          var exp = '';
+          if (pos >= 0) {
+            exp = rule.substr(pos + 1);
+            rule = rule.substr(0, pos);
+          }
+
+          switch (rule) {
+            case 'required':
+              if (i.val().trim() === '') {
+                ierror = true;
+              }
+              break;
+            case 'minlen':
+              if (i.val().length < parseInt(exp)) {
+                ierror = true;
+              }
+              break;
+            case 'email':
+              if (i.val().trim() === '' || !emailExp.test(i.val())) {
+                ierror = true;
+              }
+              break;
+            case 'checked':
+              if (!i.is(':checked')) {
+                ierror = true;
+              }
+              break;
+            case 'regexp':
+              exp = new RegExp(exp);
+              if (!exp.test(i.val())) {
+                ierror = true;
+              }
+              break;
+          }
+
+          if (ierror) {
+            var msg = i.attr('data-msg') || 'Wrong input';
+            i.next('.validation').html(msg).show();
+            ferror = true;
+          }
         });
 
-        // Add animation for cards on scroll
-        const cards = document.querySelectorAll('.card');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
+        // TEXTAREA validation
+        f.children('textarea').each(function () {
+          var i = $(this);
+          var rule = i.attr('data-rule');
+          if (!rule) return;
 
-        cards.forEach(card => {
-            card.style.opacity = 0;
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s, transform 0.5s';
-            observer.observe(card);
+          var ierror = false;
+          var pos = rule.indexOf(':');
+          var exp = '';
+          if (pos >= 0) {
+            exp = rule.substr(pos + 1);
+            rule = rule.substr(0, pos);
+          }
+
+          switch (rule) {
+            case 'required':
+              if (i.val().trim() === '') {
+                ierror = true;
+              }
+              break;
+            case 'minlen':
+              if (i.val().length < parseInt(exp)) {
+                ierror = true;
+              }
+              break;
+          }
+
+          if (ierror) {
+            var msg = i.attr('data-msg') || 'Wrong input';
+            i.next('.validation').html(msg).show();
+            ferror = true;
+          }
         });
 
-        // Carousel Slider Functionality
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active');
-                dots[i].classList.remove('active');
-                if (i === index) {
-                    slide.classList.add('active');
-                    dots[i].classList.add('active');
-                }
-            });
+        // If there are validation errors, stop here
+        if (ferror) {
+          return false;
         }
 
-        function currentSlide(index) {
-            slideIndex = index;
-            showSlide(slideIndex);
+        sendContactForm();
+        return false;
+      });
+
+      function sendContactForm() {
+        const contactForm = document.getElementById('contact-form');
+
+        if (!contactForm) {
+          console.error('Contact form not found');
+          return;
         }
 
-        // Auto-slide every 5 seconds
-        setInterval(() => {
-            slideIndex = (slideIndex + 1) % slides.length;
-            showSlide(slideIndex);
-        }, 5000);
-    </script>
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+        if (!submitBtn) {
+          console.error('Submit button not found');
+          return;
+        }
+
+        const originalText = submitBtn.textContent;
+        const Msg = document.getElementById('msg');
+
+        const SERVICE_ID = "service_pb2hxso";
+        const TEMPLATE_ID = "template_nqirezv";
+
+        // Get form values
+        const nameField = document.getElementById("name");
+        const emailField = document.getElementById("email");
+        const subjectField = document.getElementById("subject");
+        const messageField = document.getElementById("message");
+
+        if (!nameField || !emailField || !subjectField || !messageField) {
+          console.error('One or more form fields not found');
+          if (Msg) {
+            Msg.textContent = "Form error: Please check form configuration";
+            Msg.style.display = 'block';
+            Msg.style.color = 'red';
+          }
+          return;
+        }
+
+        const templateParams = {
+          name: nameField.value,
+          email: emailField.value,
+          subject: subjectField.value,
+          message: messageField.value
+        };
+
+        // Validate required fields
+        if (!templateParams.name.trim() || !templateParams.email.trim() ||
+          !templateParams.subject.trim() || !templateParams.message.trim()) {
+          if (Msg) {
+            Msg.textContent = "Please fill in all required fields";
+            Msg.style.display = 'block';
+            Msg.style.color = 'red';
+            setTimeout(() => { if (Msg) Msg.style.display = 'none'; }, 3000);
+          }
+          return;
+        }
+
+        submitBtn.textContent = 'Loading...';
+        submitBtn.disabled = true;
+
+        if (Msg) {
+          Msg.style.display = 'none';
+        }
+
+        // Send email using EmailJS
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
+          .then((response) => {
+            console.log('Email sent successfully:', response.status, response.text);
+            if (Msg) {
+              Msg.textContent = "Message sent successfully!";
+              Msg.style.display = 'block';
+              Msg.style.color = 'green';
+              Msg.style.backgroundColor = '#d4edda';
+              Msg.style.border = '1px solid #c3e6cb';
+              Msg.style.padding = '10px';
+              Msg.style.borderRadius = '4px';
+              Msg.style.marginBottom = '15px';
+            }
+            contactForm.reset();
+            setTimeout(() => {
+              if (Msg) Msg.style.display = 'none';
+            }, 5000);
+          })
+          .catch((error) => {
+            console.error('Email sending failed:', error);
+
+            let errorMessage = "Sorry, there was an error sending your message.";
+
+            // Specific error handling
+            if (error.status === 412) {
+              errorMessage = "Email service configuration error. Please check EmailJS service permissions.";
+            } else if (error.status === 400) {
+              errorMessage = "Invalid request. Please check your form data.";
+            }
+
+            if (Msg) {
+              Msg.textContent = errorMessage;
+              Msg.style.display = 'block';
+              Msg.style.color = '#721c24';
+              Msg.style.backgroundColor = '#f8d7da';
+              Msg.style.border = '1px solid #f5c6cb';
+              Msg.style.padding = '10px';
+              Msg.style.borderRadius = '4px';
+              Msg.style.marginBottom = '15px';
+            }
+
+            setTimeout(() => {
+              if (Msg) Msg.style.display = 'none';
+            }, 5000);
+          })
+          .finally(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+          });
+      }
+
+    });
+  </script>
 </body>
+
 </html>
