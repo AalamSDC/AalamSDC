@@ -147,14 +147,13 @@
   }
 }
 
+
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
 
-
   .header-area {
-    height: 60px !important;
-    background: #000;
+    height: 80px !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -162,7 +161,7 @@
   .stick .navbar-header a.navbar-brand {
     display: inline-block;
     height: 60px !important;
-    padding: 9px 0;
+    /* padding: 9px 0; */
   }
 
   .navbar-default .navbar-toggle,
@@ -351,6 +350,11 @@
   li.threaded-comments {
     margin-left: 0;
   }
+
+  .section-header .section-title {
+    font-size: 2.3rem;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -359,6 +363,7 @@
     max-width: 100% !important;
   }
 }
+
 
 /* Large Mobile :480px. */
 
@@ -433,7 +438,7 @@
   }
 
   .card img {
-    height: 190px;
+    height: 250px;
     width: 100%;
     margin: 0px;
   }
