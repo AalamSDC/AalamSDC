@@ -1908,7 +1908,7 @@ div#preloader {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
-  height: 80%;
+  height: 70%;
 }
 
 .header-bg.home-2 {
@@ -2556,3 +2556,7 @@ span.email-notes {
   padding-top: 10px;
 }
 
+.slider-content
+{
+  padding-bottom: 90px;
+}
